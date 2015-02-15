@@ -6,266 +6,386 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>946</width>
+    <width>742</width>
     <height>433</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>5</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QLabel" name="label_status">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>788</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <widget class="QWidget" name="">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>370</y>
-      <width>381</width>
-      <height>16</height>
+      <x>0</x>
+      <y>0</y>
+      <width>732</width>
+      <height>373</height>
      </rect>
     </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">background-color: rgb(255, 253, 190)</string>
-    </property>
-    <property name="text">
-     <string>[+]status</string>
-    </property>
-   </widget>
-   <widget class="QLineEdit" name="lineEdit_name">
-    <property name="geometry">
-     <rect>
-      <x>32</x>
-      <y>50</y>
-      <width>131</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="sizePolicy">
-     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-      <horstretch>0</horstretch>
-      <verstretch>0</verstretch>
-     </sizepolicy>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="button_test">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>50</y>
-      <width>75</width>
-      <height>23</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>test</string>
-    </property>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_addCustomer">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>20</y>
-      <width>241</width>
-      <height>161</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Add Customer</string>
-    </property>
-    <widget class="QPushButton" name="pushButton_addCustomer">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>120</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
+    <layout class="QHBoxLayout" name="horizontalLayout_centralWidget">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetNoConstraint</enum>
      </property>
-     <property name="text">
-      <string>Add</string>
-     </property>
-    </widget>
-    <widget class="QWidget" name="layoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>30</y>
-       <width>195</width>
-       <height>80</height>
-      </rect>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout">
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout">
-        <item>
-         <widget class="QLabel" name="label">
-          <property name="text">
-           <string>Name       :</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_newCustomer_name"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <item>
-         <widget class="QLabel" name="label_2">
-          <property name="text">
-           <string>Nic no      :</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_newCustomer_nic"/>
-        </item>
-       </layout>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_3">
-        <item>
-         <widget class="QLabel" name="label_3">
-          <property name="text">
-           <string>Contact   :</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLineEdit" name="lineEdit_newCustomer_contact"/>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="groupBox_2">
-    <property name="geometry">
-     <rect>
-      <x>540</x>
-      <y>190</y>
-      <width>241</width>
-      <height>191</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Add Meter</string>
-    </property>
-    <widget class="QGroupBox" name="groupBox_3">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>80</y>
-       <width>221</width>
-       <height>71</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string>Unlock Codes</string>
-     </property>
-     <widget class="QToolButton" name="toolButton">
-      <property name="geometry">
-       <rect>
-        <x>140</x>
-        <y>50</y>
-        <width>71</width>
-        <height>19</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Edit</string>
-      </property>
-     </widget>
-     <widget class="QWidget" name="">
-      <property name="geometry">
-       <rect>
-        <x>21</x>
-        <y>21</y>
-        <width>190</width>
-        <height>22</height>
-       </rect>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>501</width>
+         <height>371</height>
+        </size>
+       </property>
+       <property name="title">
+        <string>GroupBox</string>
+       </property>
+       <widget class="QLineEdit" name="lineEdit_name">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>110</y>
+          <width>131</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="button_test">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>220</y>
+          <width>75</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>test</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_status">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>270</y>
+          <width>341</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 253, 190)</string>
+        </property>
+        <property name="text">
+         <string>[+]status</string>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
        <item>
-        <widget class="QLineEdit" name="lineEdit_2"/>
+        <widget class="QGroupBox" name="groupBox_addCustomer">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>221</width>
+           <height>151</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>221</width>
+           <height>151</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Add Customer</string>
+         </property>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>30</y>
+            <width>195</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_addCustomer">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetFixedSize</enum>
+           </property>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QLabel" name="label">
+               <property name="text">
+                <string>Name       :</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_newCustomer_name"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_2">
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="text">
+                <string>Nic no      :</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_newCustomer_nic"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>Contact   :</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_newCustomer_contact"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_8">
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>108</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_addCustomer">
+               <property name="text">
+                <string>Add</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <zorder>pushButton_addCustomer</zorder>
+         <zorder>layoutWidget</zorder>
+         <zorder>groupBox_2</zorder>
+         <zorder>horizontalSpacer</zorder>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_3"/>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEdit_4"/>
-       </item>
-       <item>
-        <widget class="QLineEdit" name="lineEdit_5"/>
+        <widget class="QGroupBox" name="groupBox_2">
+         <property name="minimumSize">
+          <size>
+           <width>221</width>
+           <height>211</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>221</width>
+           <height>211</height>
+          </size>
+         </property>
+         <property name="title">
+          <string>Add Meter</string>
+         </property>
+         <widget class="QWidget" name="">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>194</width>
+            <height>160</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>ID            :</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit_6"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_4">
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="text">
+                <string>Price        :</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="lineEdit"/>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_3">
+             <property name="minimumSize">
+              <size>
+               <width>191</width>
+               <height>71</height>
+              </size>
+             </property>
+             <property name="title">
+              <string>Unlock Codes</string>
+             </property>
+             <widget class="QWidget" name="">
+              <property name="geometry">
+               <rect>
+                <x>-1</x>
+                <y>21</y>
+                <width>190</width>
+                <height>52</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_5">
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_2"/>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_3"/>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_4"/>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_5"/>
+                 </item>
+                </layout>
+               </item>
+               <item>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <item>
+                  <spacer name="horizontalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>118</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QToolButton" name="toolButton">
+                   <property name="text">
+                    <string>Edit</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </item>
+              </layout>
+             </widget>
+             <zorder>toolButton</zorder>
+             <zorder>layoutWidget</zorder>
+             <zorder>groupBox_addCustomer</zorder>
+             <zorder>lineEdit_2</zorder>
+             <zorder>horizontalSpacer_2</zorder>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <spacer name="horizontalSpacer_3">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>108</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton">
+               <property name="text">
+                <string>Add</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+         <zorder>layoutWidget</zorder>
+         <zorder>groupBox_3</zorder>
+         <zorder>label_5</zorder>
+         <zorder>lineEdit_6</zorder>
+         <zorder>pushButton</zorder>
+         <zorder>groupBox_addCustomer</zorder>
+         <zorder>groupBox</zorder>
+         <zorder>groupBox</zorder>
+         <zorder>horizontalSpacer_3</zorder>
+        </widget>
        </item>
       </layout>
-     </widget>
-    </widget>
-    <widget class="QPushButton" name="pushButton">
-     <property name="geometry">
-      <rect>
-       <x>150</x>
-       <y>160</y>
-       <width>80</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Add</string>
-     </property>
-    </widget>
-    <widget class="QWidget" name="layoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>50</y>
-       <width>192</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_4">
-      <item>
-       <widget class="QLabel" name="label_4">
-        <property name="text">
-         <string>Price        :</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEdit"/>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="">
-     <property name="geometry">
-      <rect>
-       <x>30</x>
-       <y>20</y>
-       <width>192</width>
-       <height>22</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_6">
-      <item>
-       <widget class="QLabel" name="label_5">
-        <property name="text">
-         <string>ID            :</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QLineEdit" name="lineEdit_6"/>
-      </item>
-     </layout>
-    </widget>
-    <zorder>layoutWidget</zorder>
-    <zorder>groupBox_3</zorder>
-    <zorder>label_5</zorder>
-    <zorder>lineEdit_6</zorder>
-    <zorder>pushButton</zorder>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -273,7 +393,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>946</width>
+     <width>742</width>
      <height>21</height>
     </rect>
    </property>

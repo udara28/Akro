@@ -14,6 +14,9 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    ui->centralWidget->setLayout(ui->horizontalLayout_centralWidget);
+    ui->groupBox_addCustomer->setLayout(ui->verticalLayout_addCustomer);
+
     bool dbStat = db.initDatabase();
     if(dbStat){
         ui->label_status->setText("Database Opened Successfully");
@@ -66,11 +69,9 @@ void MainWindow::on_pushButton_addCustomer_clicked()
 
 void MainWindow::resizeEvent ( QResizeEvent * event )
 {
-    QRect box;
-    box = ui->groupBox_addCustomer->geometry();
-
-    qDebug() << ui->centralWidget->width();
-    box.setX(ui->centralWidget->width() - 200);
-    ui->groupBox_addCustomer->setGeometry(box);
-    repaint();
+ //   QRect box;
+    qDebug() << layout();
+   // box.setX(ui->centralWidget->width());
+   // ui->groupBox_addCustomer->setGeometry(box);
+   // repaint();
 }
