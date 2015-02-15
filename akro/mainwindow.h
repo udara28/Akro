@@ -21,6 +21,8 @@ private slots:
 
     void on_pushButton_addCustomer_clicked();
 
+    void resizeEvent ( QResizeEvent * event );
+
 private:
     Ui::MainWindow *ui;
     DataBase db;

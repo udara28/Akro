@@ -3,6 +3,8 @@
 
 #include <QDebug>
 #include <QtSql/QSqlQuery>
+#include <QSqlError>
+#include <QResizeEvent>
 
 #include "validator.h"
 
@@ -55,9 +57,20 @@ void MainWindow::on_pushButton_addCustomer_clicked()
         if(stat){
             ui->label_status->setText("Customer added successfully");
         }else{
-            ui->label_status->setText("<font color=red>Failed to add customer</font>");
+            ui->label_status->setText(querry.lastError().text());
         }
     }else{
         ui->label_status->setText("<font color=red>Failed to add customer</font>");
     }
+}
+
+void MainWindow::resizeEvent ( QResizeEvent * event )
+{
+    QRect box;
+    box = ui->groupBox_addCustomer->geometry();
+
+    qDebug() << ui->centralWidget->width();
+    box.setX(ui->centralWidget->width() - 200);
+    ui->groupBox_addCustomer->setGeometry(box);
+    repaint();
 }

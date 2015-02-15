@@ -19,8 +19,7 @@ bool Validator::nameValidate(QLineEdit *line){
 
 bool Validator::nicValidate(QLineEdit *line){
     QString nic = line->text();
-    qDebug() << nic.left(10);
-    if( nic.length() != 10 || nic.left(1).toLower() != "v"){
+    if( nic.length() != 10 || nic.right(1).toLower() != "v"){
         line->setStyleSheet("QLineEdit{background-color:lightsalmon}");
         return false;
     }else{

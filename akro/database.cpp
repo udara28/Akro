@@ -10,7 +10,7 @@ DataBase::DataBase()
 bool DataBase::initDatabase()
 {
     database = QSqlDatabase::addDatabase("QSQLITE");
-    database.setDatabaseName("C:\\Users\\Udarad\\Documents\\GitHub\\Akro\\DB\\akro.sqlite");
+    database.setDatabaseName("C:\\Users\\HP\\Documents\\GitHub\\Akro\\DB\\akro.sqlite");
     return database.open();
 }
 
